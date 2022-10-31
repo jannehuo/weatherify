@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "lib": ["DOM", "ES2020"]
+  }
+}

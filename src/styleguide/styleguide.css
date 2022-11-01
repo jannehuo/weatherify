@@ -1,0 +1,15 @@
+.sg-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sg-grid-item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sg-color-block {
+  height: 200px;
+}

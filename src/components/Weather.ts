@@ -32,7 +32,6 @@ template.innerHTML = `
     width: ${componentStyle.statusItem.size}px;
     height: ${componentStyle.statusItem.size}px;
     border-radius: 50%;
-    background-color: #7d3107;
     margin-right: 10px;
   }
 </style>

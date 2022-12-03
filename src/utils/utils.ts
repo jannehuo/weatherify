@@ -1,24 +1,5 @@
-import { BackgroundClass, WeatherType, WeatherVariable } from '../types'
+import { WeatherType, WeatherVariable } from '../types'
 import { TEMP_LIMITS } from '../constants'
-
-export const getWeatherBackground = (type: WeatherType): BackgroundClass => {
-  switch (type) {
-    case WeatherType.FREEZING:
-      return BackgroundClass.FREEZING
-    case WeatherType.COLD:
-      return BackgroundClass.COLD
-    case WeatherType.AROUND_ZERO:
-      return BackgroundClass.ZERO
-    case WeatherType.SPRING:
-      return BackgroundClass.SPRING
-    case WeatherType.SUMMER:
-      return BackgroundClass.SUMMER
-    case WeatherType.HEAT:
-      return BackgroundClass.HEAT
-    default:
-      return BackgroundClass.DEFAULT
-  }
-}
 
 export const getWeatherType = (temp: number): WeatherType => {
   if (temp <= TEMP_LIMITS.FREEZING) {

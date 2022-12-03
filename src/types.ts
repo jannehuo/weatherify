@@ -31,16 +31,6 @@ export enum WeatherType {
   HEAT = 'heat',
 }
 
-export enum BackgroundClass {
-  DEFAULT = 'bg-default',
-  FREEZING = 'bg-freezing',
-  COLD = 'bg-cold',
-  ZERO = 'bg-zero',
-  SPRING = 'bg-spring',
-  SUMMER = 'bg-summer',
-  HEAT = 'bg-heat',
-}
-
 export enum WeatherVariable {
   CLEAR = 'clear',
   OVERCAST = 'overcast',

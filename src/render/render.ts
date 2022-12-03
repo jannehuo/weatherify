@@ -1,6 +1,7 @@
 import { CurrentWeatherResponse } from '../types'
 import { getMainContainer } from '../utils/dom'
 import { getWeatherBackground } from '../utils/utils'
+import '../components/Weather'
 
 export const renderCurrentWeather = (
   currentWeather: CurrentWeatherResponse
@@ -10,7 +11,9 @@ export const renderCurrentWeather = (
   if (main) {
     main!.innerHTML = `
       <div class="weather-info-container ${containerBackground}">
-        <h1>${currentWeather.current_weather.temperature}</h1>
+        <weather-element>
+          <div slot="temp">${currentWeather.current_weather.temperature}</div>
+        </weather-element>
       </div>
     `
   }

@@ -1,5 +1,6 @@
 export interface CurrentWeatherResponse extends WeatherData {
   type: WeatherType
+  variation: WeatherVariable
 }
 
 export interface WeatherData {
@@ -38,4 +39,20 @@ export enum BackgroundClass {
   SPRING = 'bg-spring',
   SUMMER = 'bg-summer',
   HEAT = 'bg-heat',
+}
+
+export enum WeatherVariable {
+  CLEAR = 'clear',
+  OVERCAST = 'overcast',
+  FOG = 'fog',
+  LIGHT_DRIZZLE = 'light_drizzle',
+  FREEZING_DRIZZLE = 'freezing_drizzle',
+  LIGHT_RAIN = 'light_rain',
+  FREEZING_RAIN = 'freezing_rain',
+  SNOW_FALL = 'snow_fall',
+  SNOW_GRAINS = 'snow_grains',
+  RAIN_SHOWERS = 'rain_showers',
+  SNOW_SHOWERS = 'snow_showers',
+  THUNDERSTORM = 'thunderstorm',
+  THUNDERSTORM_HAIL = 'thunderstorm_hail',
 }

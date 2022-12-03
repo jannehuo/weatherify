@@ -109,3 +109,9 @@ h2 {
     rgba(161, 0, 0, 1) 90.3%
   );
 }
+
+.weather-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

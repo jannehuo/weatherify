@@ -1,6 +1,6 @@
 import { API_URL } from '../constants'
 import { CurrentWeatherResponse, WeatherData } from '../types'
-import { getWeatherType } from '../utils/utils'
+import { getWeatherType, getWeatherVariation } from '../utils/utils'
 
 export const getCurrentWeather = async (
   location: GeolocationPosition
@@ -11,6 +11,7 @@ export const getCurrentWeather = async (
   const currentWeatherWithType = {
     ...currentWeather,
     type: getWeatherType(currentWeather.current_weather.temperature),
+    variation: getWeatherVariation(currentWeather.current_weather.weathercode),
   }
   return currentWeatherWithType
 }
